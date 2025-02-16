@@ -41,7 +41,7 @@ function App() {
       <Alert alert={alert} />
       <div className="container my-3">
         <Routes>  {/* ✅ Use Routes instead of Switch */}
-          <Route exact path="/about" element={<About />} />  {/* ✅ Use element instead of children */}
+          <Route exact path="/about" element={<About mode={mode} />} />  {/* ✅ Use element instead of children */}
           <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
         </Routes>
       </div>
